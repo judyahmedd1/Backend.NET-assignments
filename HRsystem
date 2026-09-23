@@ -24,7 +24,7 @@ CREATE TABLE Employees(
 CREATE TABLE Projects (
     ProjectID INT PRIMARY KEY,
     ProjectTtitle NVARCHAR(255) NOT NULL,
-    ProjectDescription NVARCHAR(MAX),
+    ProjectDescription NVARCHAR(MAX) NOT NULL,
 	DepartmentID INT NOT NULL,
 	FOREIGN KEY (DepartmentID) REFERENCES Department(DepartmentID)
 );
